@@ -147,7 +147,7 @@ MailjetClient.prototype.httpRequest = function(method, url, data, callback) {
 	var options = {
 		json: url.indexOf('text:plain') === -1,
 		url: url,
-		useragent: 'mailjet-api-v3-nodejs/' + this.version,
+		useragent: 'sumome/' + this.version,
 		auth: {user: this.apiKey, pass: this.apiSecret}
 	}
 	if ((method === 'post' || method === 'put')) {
